@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Happy Easter!</title>
+    <style>
+      body {
+        background-color: black;
+      }
+
+      #center-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+
+      #center-container button {
+        background-color: rgb(0, 132, 255);
+        color: white;
+        border: none;
+        font-size: 60px;
+        font-weight: bold;
+        padding: 40px 80px;
+        border-radius: 5px;
+      }
+
+      #center-container button:focus {
+        outline: none;
+      }
+
+      #center-container.white-background {
+        background-color: black;
+      }
+
+      #center-container.white-background p {
+        font-size: 30px;
+        font-weight: bold;
+        color: white;
+        text-align: center;
+        line-height: 1.5;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="center-container">
+      <button id="click-button">Tap Here</button>
+    </div>
+
+    <script>
+      const button = document.getElementById('click-button');
+      const container = document.getElementById('center-container');
+
+      button.addEventListener('click', () => {
+        container.classList.add('white-background');
+        container.innerHTML = '<p>Helloo careen👋<br>I hope you are good, I am good too😌<br>I wish you a happy easter to you & your family❤️<br>Lots of love, shortcake🍰🤎💕<br>Henry<br>❤️❤️❤️</p>';
+      });
+    </script>
+  </body>
+</html>
